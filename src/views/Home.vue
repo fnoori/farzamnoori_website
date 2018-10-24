@@ -15,3 +15,10 @@ export default {
   }
 }
 </script>
+
+<style>
+  .home {
+    margin: 0.5rem 1rem;
+  }
+</style>
+
