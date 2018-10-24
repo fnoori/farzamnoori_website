@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <PageTitle title="Home">
+  <div class="computer-graphics">
+    <PageTitle title="Computer Graphics">
     </PageTitle>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import PageTitle from '@/components/PageTitle.vue'
 
 export default {
-  name: 'home',
+  name: 'computer_graphics',
   components: {
     PageTitle
   }
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-  .home {
+  .computer-graphics {
     margin: 0.5rem 1rem;
   }
 </style>

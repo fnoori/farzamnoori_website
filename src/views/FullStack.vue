@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <PageTitle title="Home">
+  <div class="full-stack">
+    <PageTitle title="Full Stack">
     </PageTitle>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import PageTitle from '@/components/PageTitle.vue'
 
 export default {
-  name: 'home',
+  name: 'full_stack',
   components: {
     PageTitle
   }
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-  .home {
+  .full-stack {
     margin: 0.5rem 1rem;
   }
 </style>
