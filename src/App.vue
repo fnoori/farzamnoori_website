@@ -22,6 +22,7 @@
     }
 
   .my-navbar {
-    background-color: rgba(0,0,0,0.1);    
+    background-color: #F44336;
+    color: white !important; 
   }
 </style>
