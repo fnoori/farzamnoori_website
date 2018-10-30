@@ -2,7 +2,7 @@
   <div id="app">
     <b-navbar toggleable class="my-navbar" fixed>
       <b-navbar-brand to="/" class="mr-auto">Farzam Noori</b-navbar-brand>
-      <b-navbar-toggle target="nav_collapse" ></b-navbar-toggle>
+      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
@@ -62,4 +62,37 @@ export default {
   .my-navbar {
     background-color: #F44336;
   }
+
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
 </style>
