@@ -1,6 +1,6 @@
 <template>
   <div class="title-page">
-    {{ title }}
+    <!--{{ title }}-->
   </div>
 </template>
 

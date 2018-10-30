@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <b-navbar toggleable class="my-navbar" fixed>
-      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
-      <b-navbar-brand to="/">Farzam Noori</b-navbar-brand>
+      <b-navbar-brand to="/" class="mr-auto">Farzam Noori</b-navbar-brand>
+      <b-navbar-toggle target="nav_collapse" ></b-navbar-toggle>
 
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
@@ -52,6 +51,12 @@ export default {
   }
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+  .navbar-brand {
+    margin-left: 0 !important;
+  }
+  .navbar-toggler {
+    padding-right: 0 !important;
   }
 
   .my-navbar {
