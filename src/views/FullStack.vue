@@ -1,5 +1,5 @@
 <template>
-  <div class="full-stack">
+  <div class="full-stack main-area">
     <PageTitle title="Full Stack">
     </PageTitle>
   </div>
@@ -18,6 +18,5 @@ export default {
 
 <style scoped>
   .full-stack {
-    margin: 0.5rem 1rem;
   }
 </style>

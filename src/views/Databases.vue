@@ -1,5 +1,5 @@
 <template>
-  <div class="databases">
+  <div class="databases main-area">
     <PageTitle title="Databases">
     </PageTitle>
   </div>
@@ -18,6 +18,5 @@ export default {
 
 <style scoped>
   .databases {
-    margin: 0.5rem 1rem;
   }
 </style>

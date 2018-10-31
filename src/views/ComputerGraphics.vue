@@ -1,5 +1,5 @@
 <template>
-  <div class="computer-graphics">
+  <div class="computer-graphics main-area">
     <PageTitle title="Computer Graphics">
     </PageTitle>
   </div>
@@ -18,6 +18,5 @@ export default {
 
 <style scoped>
   .computer-graphics {
-    margin: 0.5rem 1rem;
   }
 </style>
