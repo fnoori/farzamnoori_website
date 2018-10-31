@@ -1,6 +1,6 @@
 <template>
   <div class="title-page">
-    <!--{{ title }}-->
+    {{ title }}
   </div>
 </template>
 
@@ -17,9 +17,7 @@ export default {
 <style scoped>
   .title-page {
     font-weight: 700;
-    font-size: 2.5rem;
-    color: rgba(0,0,0,0.7);
-    background-color: rgba(0,0,0,0.1);
-    margin: -8px -15px;
+    font-size: 2rem;
+    color: rgba(0,0,0,0.5);
   }
 </style>

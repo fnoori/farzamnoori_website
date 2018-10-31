@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="main-area">
     <PageTitle title="Home">
     </PageTitle>
   </div>
@@ -18,6 +18,5 @@ export default {
 
 <style scoped>
   .home {
-    margin: 0.5rem 1rem;
   }
 </style>
