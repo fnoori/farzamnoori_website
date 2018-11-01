@@ -68,9 +68,6 @@ export default {
   .navbar-items {
     margin-left: 1rem;
   }
-  .main-area {
-    margin: 0 1rem;
-  }
 
   @media (max-width: 609px) {
     ul {
