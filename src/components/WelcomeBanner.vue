@@ -2,9 +2,10 @@
   <div class="welcome-banner">
     <h2>Welcome</h2>
     <div>
-      A place where I will highlight moments of
+      This is a place where I will highlight moments of
       both my personal and professinal life.
     </div>
+    <img src="@/assets/welcome_banner.svg" alt="" class="banner-img"/>
   </div>
 </template>
 
@@ -25,5 +26,31 @@ export default {
     margin-top: 1rem;
     background-color: rgba(0,0,0,0.05);
     padding: 1rem;
+    position: relative;
+    height: 15rem;
+  }
+  .banner-img {
+    width: 20rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media (max-width: 991px) {
+    .welcome-banner {
+      height: 18rem;
+    }
+    .banner-img {
+      width: 20rem;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .welcome-banner {
+      height: 20rem;
+    }
+    .banner-img {
+      width: 20rem;
+    }
   }
 </style>ƒ

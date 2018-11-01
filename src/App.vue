@@ -34,6 +34,7 @@ export default {
 
   #app {
     font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
@@ -69,6 +70,12 @@ export default {
   }
   .main-area {
     margin: 0 1rem;
+  }
+
+  @media (max-width: 609px) {
+    ul {
+      font-size: 0.9rem;
+    }
   }
 
   @media (max-width: 576px) {
