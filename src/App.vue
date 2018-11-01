@@ -9,6 +9,7 @@
           <b-nav-item to="/full_stack">Full Stack</b-nav-item>
           <b-nav-item to="/computer_graphics">Computer Graphics</b-nav-item>
           <b-nav-item to="/databases">Databases</b-nav-item>
+          <b-nav-item to="/games">Games?</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
 
@@ -73,6 +74,6 @@ export default {
   @media (max-width: 576px) {
     .navbar-items{
       margin-left: 0rem;
-    } 
+    }
   }
 </style>
