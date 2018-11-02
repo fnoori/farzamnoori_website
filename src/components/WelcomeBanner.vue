@@ -47,7 +47,7 @@ export default {
 
   @media (max-width: 350px) {
     .welcome-banner {
-      height: 20rem;
+      height: 21rem;
     }
     .banner-img {
       width: 20rem;
