@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <b-navbar toggleable class="my-navbar" fixed>
-      <b-navbar-brand to="/" class="mr-auto">Farzam Noori</b-navbar-brand>
+      <b-navbar-brand to="/" class="mr-auto">
+        <img src="@/assets/farzamnoori_title.png" class="title" alt=""/>
+      </b-navbar-brand>
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
       <b-collapse is-nav id="nav_collapse" class="navbar-items">
@@ -56,12 +58,16 @@ export default {
   }
   .navbar-brand {
     margin-left: 0 !important;
-    font-weight: bold;
+    padding-top: 0 !important;
+
   }
   .navbar-toggler {
     padding-right: 0 !important;
   }
 
+  .title {
+    width: 6rem;
+  }
   .my-navbar {
     background-color: #F44336;
   }
