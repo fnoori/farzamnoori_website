@@ -66,7 +66,7 @@ export default {
   }
 
   .title {
-    width: 6rem;
+    width: 5rem;
   }
   .my-navbar {
     background-color: #F44336;

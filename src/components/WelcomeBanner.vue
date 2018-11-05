@@ -24,6 +24,7 @@ export default {
   .welcome-banner {
     color: rgba(0,0,0,0.7);
     margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: rgba(0,0,0,0.05);
     padding: 1rem;
     position: relative;
