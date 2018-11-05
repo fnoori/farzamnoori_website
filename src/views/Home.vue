@@ -4,12 +4,21 @@
     <WelcomeBanner/>
 
     <div class="time-line">
-      <b-card>
-        <div class="text-center">Started university at</div>
-        <div class="uofc">University of Calgary</div>
-        <img src="@/assets/uofc_logo.png" alt="" class="uofc-logo">
-        <div class="year">2013</div>
-      </b-card>
+      <div class="d-inline-block">
+        <b-card class="d-inline-block">
+          <div class="text-center">Started university at</div>
+          <div class="uofc">University of Calgary</div>
+          <img src="@/assets/uofc_logo.png" alt="" class="uofc-logo">
+          <div class="year">2013</div>
+        </b-card>
+        <font-awesome-icon icon="fa-caret-right" />
+        <b-card class="d-inline-block">
+          <div class="text-center">Started university at</div>
+          <div class="uofc">University of Calgary</div>
+          <img src="@/assets/uofc_logo.png" alt="" class="uofc-logo">
+          <div class="year">2013</div>
+        </b-card>
+      </div>
     </div>
   </div>
 </template>
