@@ -11,7 +11,7 @@
           <b-nav-item to="/full_stack">Full Stack</b-nav-item>
           <b-nav-item to="/computer_graphics">Computer Graphics</b-nav-item>
           <b-nav-item to="/databases">Databases</b-nav-item>
-          <b-nav-item to="/games">Games?</b-nav-item>
+          <b-nav-item to="/information_visualization">Info. Vis.?</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
 
@@ -36,7 +36,6 @@ export default {
 
   #app {
     font-family: 'Quicksand', sans-serif;
-    font-weight: 800;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;

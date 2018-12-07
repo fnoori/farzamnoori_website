@@ -1,6 +1,6 @@
 <template>
   <div class="games main-area">
-    <PageTitle title="Games?">
+    <PageTitle title="Info. Vis.?">
     </PageTitle>
   </div>
 </template>
