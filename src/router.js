@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 import ComputerGraphics from './views/ComputerGraphics.vue'
 import Databases from './views/Databases.vue'
 import FullStack from './views/FullStack.vue'
-import Games from './views/Games.vue'
+import InformationVisualization from './views/InformationVisualization.vue'
 
 Vue.use(Router)
 
@@ -32,9 +32,9 @@ export default new Router({
       component: FullStack
     },
     {
-      path: '/games',
-      name: 'games',
-      component: Games
+      path: '/information_visualization',
+      name: 'information_visualization',
+      component: InformationVisualization
     }
   ]
 })
