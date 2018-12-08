@@ -7,8 +7,8 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="hexa"></span>
-            <span class="flag">Lorem ipsum.</span>
+            <span class="dot"></span>
+            <span class="flag">Started Undergrad</span>
             <span class="time-wrapper"><span class="time">Sep 2013</span></span>
           </div>
           <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
@@ -19,8 +19,8 @@
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <span class="hexa"></span>
-            <span class="flag">Lorem ipsum Anim.</span>
+            <span class="dot"></span>
+            <span class="flag">Microsoft Imagine Camp</span>
             <span class="time-wrapper"><span class="time">Dec 2014</span></span>
           </div>
           <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
@@ -31,7 +31,7 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="hexa"></span>
+            <span class="dot"></span>
             <span class="flag">Lorem Occaecat.</span>
             <span class="time-wrapper"><span class="time">July 2014</span></span>
           </div>
@@ -67,7 +67,7 @@ header h1{
    margin-bottom: 0;
  }
 
-.hexa{
+.dot{
   border-radius: 50%;
   display: inline-block;
 }
@@ -103,7 +103,7 @@ header h1{
   padding: 2em 0;
 }
 
-.timeline .hexa{
+.timeline .dot{
   width: 15px;
   height: 15px;
   position: absolute;
@@ -117,14 +117,14 @@ header h1{
   margin-top: 0;
 }
 
-.timeline .hexa:before {
+.timeline .dot:before {
   border-bottom: 4px solid #00c4f3;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
 }
 
-.timeline .hexa:after {
+.timeline .dot:after {
   border-left-width: 8px;
   border-right-width: 8px;
   border-top: 4px solid #00c4f3;
@@ -147,38 +147,18 @@ header h1{
   position: relative;
   display: inline;
   background: rgb(255,255,255);
-  font-weight: 600;
   z-index: 15;
   padding: 6px 10px;
   text-align: left;
   border-radius: 5px;
 }
 
-.direction-l .flag:after,
-.direction-r .flag:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -15px;
-  height: 0;
-  width: 0;
-  margin-left: -8px;
-  border: solid transparent;
-  border-bottom-color: rgb(255,255,255);
-  border-width: 8px;
-  pointer-events: none;
-}
-
 .direction-l .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
 }
 
 .direction-r .flag {
-  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.15);
 }
 
 .time-wrapper {
@@ -187,6 +167,7 @@ header h1{
   margin: 4px 0 0 0;
   z-index: 14;
   line-height: 1em;
+  font-size: 0.9em;
   vertical-align: middle;
   color: #fff;
 }
@@ -209,10 +190,6 @@ header h1{
   position: relative;
   margin: 1em 0 0 0;
   padding: 1em;
-  background: rgb(254,254,254);
-  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-  box-shadow: 0 0 1px rgba(0,0,0,0.20);
   z-index: 15;
 }
 
@@ -239,13 +216,13 @@ header h1{
     visibility: hidden;
   }
 
-  .timeline .hexa {
+  .timeline .dot {
     left: -28px;
     right: auto;
     top: 8px;
   }
 
-  .timeline .direction-l .hexa {
+  .timeline .direction-l .dot {
     left: auto;
     right: -28px;
   }
@@ -269,26 +246,7 @@ header h1{
   }
 
   .flag {
-    font-size: 18px;
-  }
-
-  .direction-l .flag:after {
-    left: auto;
-    right: -16px;
-    top: 50%;
-    margin-top: -8px;
-    border: solid transparent;
-    border-left-color: rgb(254,254,254);
-    border-width: 8px;
-  }
-
-  .direction-r .flag:after {
-    top: 50%;
-    margin-top: -8px;
-    border: solid transparent;
-    border-right-color: rgb(254,254,254);
-    border-width: 8px;
-    left: -8px;
+    font-size: 1em;
   }
 
   .time-wrapper {
@@ -314,7 +272,7 @@ header h1{
   }
 }
 
-@media(min-width: 992px){
+@media(min-width: 992px) {
   .timeline {
     width: 800px;
     margin: 0 auto;
@@ -333,6 +291,17 @@ header h1{
     width: 380px;
     float: right;
     text-align: left;
+  }
+}
+
+@media(max-width: 768px) {
+  .desc {
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    z-index: 15;
+    background-color: rgba(255,255,255,1.0);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
   }
 }
 </style>
