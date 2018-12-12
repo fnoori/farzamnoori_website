@@ -7,11 +7,14 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
+            <img src="@/assets/uofc_logo.png" class="small-logo" alt="">
             <span class="dot"></span>
             <span class="flag">Started Undergrad</span>
             <span class="time-wrapper"><span class="time">Sep 2013</span></span>
           </div>
-          <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+          <div class="desc">
+            Originally wanted to get into the Engineering program, but instead got into my secondary choice, computer science.
+          </div>
         </div>
       </li>
 
@@ -269,6 +272,10 @@ header h1{
 
   .direction-r .desc {
     margin: 1em 0 0 0.75em;
+  }
+
+  .small-logo {
+    width: 3rem;
   }
 }
 
