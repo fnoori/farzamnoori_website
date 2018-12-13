@@ -1,6 +1,5 @@
 <template>
   <div class="main-area container">
-    <!--<PageTitle title="Home"/>-->
     <WelcomeBanner/>
     <ul class="timeline">
       <!-- Item 1 -->
@@ -46,13 +45,11 @@
 </template>
 
 <script>
-import PageTitle from '@/components/PageTitle.vue'
 import WelcomeBanner from '@/components/WelcomeBanner.vue'
 
 export default {
   name: 'home',
   components: {
-    PageTitle,
     WelcomeBanner
   }
 }
