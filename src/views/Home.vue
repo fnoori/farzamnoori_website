@@ -6,7 +6,7 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <img src="@/assets/uofc_logo.png" class="dot" alt="">
+            <img src="@/assets/uofc_logo_tmp.png" class="dot" alt="">
             <span class="flag ml-4">Started Undergrad</span>
             <span class="time-wrapper">
               <span class="time">Sep 2013</span>
