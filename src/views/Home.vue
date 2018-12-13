@@ -6,13 +6,14 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <img src="@/assets/uofc_logo.png" class="small-logo" alt="">
-            <span class="dot"></span>
-            <span class="flag">Started Undergrad</span>
-            <span class="time-wrapper"><span class="time">Sep 2013</span></span>
+            <img src="@/assets/uofc_logo.png" class="dot" alt="">
+            <span class="flag ml-4">Started Undergrad</span>
+            <span class="time-wrapper">
+              <span class="time">Sep 2013</span>
+            </span>
           </div>
           <div class="desc">
-            Originally wanted to get into the Engineering program, but instead got into my secondary choice, computer science.
+            Not getting into my first choice of study was disheartening, but after four years, I am glad computer science was my second choice.
           </div>
         </div>
       </li>
@@ -21,8 +22,8 @@
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <span class="dot"></span>
-            <span class="flag">Microsoft Imagine Camp</span>
+            <img src="@/assets/microsoft_logo.png" class="dot" alt="">
+            <span class="flag mr-4">Microsoft Imagine Camp</span>
             <span class="time-wrapper"><span class="time">Dec 2014</span></span>
           </div>
           <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
@@ -68,7 +69,6 @@ header h1{
  }
 
 .dot{
-  border-radius: 50%;
   display: inline-block;
 }
 
@@ -104,17 +104,16 @@ header h1{
 }
 
 .timeline .dot{
-  width: 15px;
-  height: 15px;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  background: #F44336;
   z-index: 5;
   left: 0;
   right: 0;
   margin-left:auto;
   margin-right:auto;
   top: -30px;
-  margin-top: 0;
+  margin-top: -13px;
 }
 
 .timeline .dot:before {
@@ -217,14 +216,14 @@ header h1{
   }
 
   .timeline .dot {
-    left: -28px;
+    left: -45px;
     right: auto;
-    top: 8px;
+    top: 0;
   }
 
   .timeline .direction-l .dot {
     left: auto;
-    right: -28px;
+    right: -45px;
   }
 
   .direction-l {
