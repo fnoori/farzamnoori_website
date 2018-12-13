@@ -6,7 +6,9 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <img src="@/assets/uofc_logo_tmp.png" class="dot" alt="">
+            <div>
+              <img src="@/assets/uofc_logo.png" class="dot" alt="">
+            </div>
             <span class="flag ml-4">Started Undergrad</span>
             <span class="time-wrapper">
               <span class="time">Sep 2013</span>
@@ -22,7 +24,9 @@
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <img src="@/assets/microsoft_logo.png" class="dot" alt="">
+            <div>
+              <img src="@/assets/microsoft_logo.png" class="dot" alt="">
+            </div>
             <span class="flag mr-4">Microsoft Imagine Camp</span>
             <span class="time-wrapper"><span class="time">Dec 2014</span></span>
           </div>
@@ -104,8 +108,7 @@ header h1{
 }
 
 .timeline .dot{
-  width: 50px;
-  height: 50px;
+  width: 3rem;
   position: absolute;
   z-index: 5;
   left: 0;
