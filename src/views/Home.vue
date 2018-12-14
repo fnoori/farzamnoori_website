@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="desc">
-            Started my 16 month journey with the Calgary Airport Authority, where I was given the chance to try many different potential career choices (within the field).
+            Started my 16 month journey with the Calgary Airport Authority, where I had the oppertunity to not only grow my professional skills, but more importantly my interpersonal skills.
           </div>
         </div>
       </li>
