@@ -5,13 +5,11 @@
       <!-- Item 1 -->
       <li>
         <div class="direction-r">
-          <div class="flag-wrapper">
-            <div>
-              <img src="@/assets/uofc_logo.png" class="dot" alt="">
-            </div>
-            <span class="flag ml-4">Started Undergrad</span>
+          <div class="flag-wrapper-r">
+            <img src="@/assets/uofc_logo_tmp.png" class="dot" alt="">
+            <span class="flag flag-r">Started Undergrad</span>
             <span class="time-wrapper">
-              <span class="time">Sep 2013</span>
+              <span class="time">2013</span>
             </span>
           </div>
           <div class="desc">
@@ -24,27 +22,48 @@
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <div>
-              <img src="@/assets/microsoft_logo.png" class="dot" alt="">
+            <div class="year-title-img">
+              <img src="@/assets/microsoft_logo_tmp.png" class="dot" alt="">
+              <span class="time-wrapper"><span class="time">2014</span></span>
+              <span class="flag flag-l">Microsoft Imagine Camp</span>
             </div>
-            <span class="flag mr-4">Microsoft Imagine Camp</span>
-            <span class="time-wrapper"><span class="time">Dec 2014</span></span>
           </div>
-          <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+          <div class="desc">
+            First dev camp, my team came in third place for designing a mobile app on Windows mobile for the university's student centre.
+          </div>
         </div>
       </li>
 
       <!-- Item 3 -->
       <li>
         <div class="direction-r">
-          <div class="flag-wrapper">
-            <span class="dot"></span>
-            <span class="flag">Lorem Occaecat.</span>
-            <span class="time-wrapper"><span class="time">July 2014</span></span>
+          <div class="flag-wrapper-r">
+            <img src="@/assets/android_logo_tmp.png" class="dot" alt="">
+            <span class="flag flag-r">Developing Apps</span>
+            <span class="time-wrapper"><span class="time">2015</span></span>
           </div>
-          <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+          <div class="desc">
+            Realized I was not getting real world experience through my education, so I set off to develop two mobile apps, one individually, and the other as part of a team of two.
+          </div>
         </div>
       </li>
+
+      <!-- Item 4 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <div class="year-title-img">
+              <img src="@/assets/yyc_tmp.png" class="dot" alt="">
+              <span class="time-wrapper"><span class="time">2016</span></span>
+              <span class="flag flag-l">Calgary Airport Co-op</span>
+            </div>
+          </div>
+          <div class="desc">
+            Started my 16 month journey with the Calgary Airport Authority, where I was given the chance to try many different potential career choices (within the field).
+          </div>
+        </div>
+      </li>
+
     </ul>
   </div>
 </template>
@@ -74,6 +93,9 @@ header h1{
 
 .dot{
   display: inline-block;
+  background-color: white !important;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.05) !important;
+  padding: 2px;
 }
 
 .timeline {
@@ -113,10 +135,6 @@ header h1{
   z-index: 5;
   left: 0;
   right: 0;
-  margin-left:auto;
-  margin-right:auto;
-  top: -30px;
-  margin-top: -13px;
 }
 
 .timeline .dot:before {
@@ -219,14 +237,13 @@ header h1{
   }
 
   .timeline .dot {
-    left: -45px;
+    left: -44px;
     right: auto;
-    top: 0;
   }
 
   .timeline .direction-l .dot {
     left: auto;
-    right: -45px;
+    right: -44px;
   }
 
   .direction-l {
@@ -246,9 +263,24 @@ header h1{
   .flag-wrapper {
     display: inline-block;
   }
+  .year-title-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .flag-wrapper-r {
+    display: flex;
+    align-items: center;
+  }
 
   .flag {
     font-size: 1em;
+  }
+  .flag-r {
+    margin-left: 1.5rem;
+  }
+  .flag-l {
+    margin-right: 1.5rem;
   }
 
   .time-wrapper {
@@ -308,6 +340,34 @@ header h1{
     z-index: 15;
     background-color: rgba(255,255,255,1.0);
     box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
+  }
+
+  .timeline li {
+    margin-top: 3rem;
+  }
+
+  .timeline .dot {
+    left: 0;
+    right: 0;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    top: -10px;
+    margin-top: 0;
+  }
+
+  .flag {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .flag-wrapper-r {
+    display: block;
+  }
+  .flag-wrapper-r .dot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>
