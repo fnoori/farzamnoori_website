@@ -1,17 +1,19 @@
 <template>
   <div class="full-stack main-area">
-    <PageTitle title="Full Stack">
-    </PageTitle>
+    <UnderConstruction title="Full Stack">
+    </UnderConstruction>
   </div>
 </template>
 
 <script>
 import PageTitle from '@/components/PageTitle.vue'
+import UnderConstruction from '@/components/UnderConstruction.vue'
 
 export default {
   name: 'full_stack',
   components: {
-    PageTitle
+    PageTitle,
+    UnderConstruction
   }
 }
 </script>

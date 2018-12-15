@@ -1,17 +1,19 @@
 <template>
   <div class="games main-area">
-    <PageTitle title="Info. Vis.?">
-    </PageTitle>
+    <UnderConstruction title="Info. Vis.?">
+    </UnderConstruction>
   </div>
 </template>
 
 <script>
 import PageTitle from '@/components/PageTitle.vue'
+import UnderConstruction from '@/components/UnderConstruction.vue'
 
 export default {
   name: 'games',
   components: {
-    PageTitle
+    PageTitle,
+    UnderConstruction
   }
 }
 </script>

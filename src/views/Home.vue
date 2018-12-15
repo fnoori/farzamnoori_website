@@ -91,6 +91,10 @@ header h1{
    margin-bottom: 0;
  }
 
+ .main-area {
+   height: 100% !important;
+ }
+
 .dot{
   display: inline-block;
   background-color: white !important;
@@ -184,7 +188,7 @@ header h1{
 .time-wrapper {
   display: block;
   position: relative;
-  margin: 4px 0 0 0;
+  margin: 4px 0 4px 0;
   z-index: 14;
   line-height: 1em;
   font-size: 0.9em;
