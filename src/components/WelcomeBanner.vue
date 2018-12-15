@@ -1,10 +1,12 @@
 <template>
   <div class="welcome-banner">
     <h2>Welcome</h2>
-    <div>
-      This is a place where I will highlight moments of
-      both my personal and professinal life.
-    </div>
+    <p>
+      <div>
+        This is a place where I will highlight moments of
+        both my personal and professinal life.
+      </div>
+    </p>
     <img src="@/assets/welcome_banner.svg" alt="" class="banner-img"/>
   </div>
 </template>

@@ -14,9 +14,18 @@
           <b-nav-item to="/information_visualization">Info. Vis.?</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
-
     </b-navbar>
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
+    <footer>
+      <div class="trademark">
+        2018 Farzam
+      </div>
+      <div class="contact-info">
+        <a href="mailto:fnoori431@gmail.com">fnoori431@gmail.com</a>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -40,6 +49,18 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
   }
+
+  a,
+  a:focus,
+  a:active {
+    color: white !important;
+  }
+
+  .main-area {
+    margin: 1rem;
+    height: 551px;
+  }
+
   .navbar-brand {
     color: white !important;
   }
@@ -74,6 +95,31 @@ export default {
     margin-left: 1rem;
   }
 
+  footer {
+    background-color: #f44336;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    height: 4rem;
+    padding: 0.5rem 1rem;
+    display: flex !important;
+    align-items: center;
+  }
+  .trademark {
+  }
+  .contact-info {
+    position: absolute;
+    right: 1rem;
+  }
+  .contact-info ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .contact-info ul li {
+    display: inline;
+  }
+
   @media (max-width: 609px) {
     ul {
       font-size: 0.9rem;
@@ -83,6 +129,12 @@ export default {
   @media (max-width: 576px) {
     .navbar-items{
       margin-left: 0rem;
+    }
+    .trademark {
+      float: left;
+    }
+    .contact-info {
+      float: right;
     }
   }
 </style>
