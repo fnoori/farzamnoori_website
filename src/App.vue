@@ -57,7 +57,6 @@ export default {
   }
 
   .main-area {
-    margin: 1rem;
     height: 551px;
   }
 
