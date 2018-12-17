@@ -1,12 +1,9 @@
 <template>
   <div class="welcome-banner">
     <h2>Welcome</h2>
-    <p>
       <div>
-        This is a place where I will highlight moments of
-        both my personal and professinal life.
+        This is my personal website, where I will highlight personal milestones.
       </div>
-    </p>
     <img src="@/assets/welcome_banner.svg" alt="" class="banner-img"/>
   </div>
 </template>
@@ -37,6 +34,9 @@ export default {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+  .vue-logo {
+    width: 1rem;
   }
 
   @media (max-width: 991px) {

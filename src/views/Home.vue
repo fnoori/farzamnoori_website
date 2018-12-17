@@ -64,6 +64,38 @@
         </div>
       </li>
 
+      <!-- Item 5 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper-r">
+            <img src="@/assets/vue_logo.png" class="dot" alt="">
+            <span class="flag flag-r">Full Stack</span>
+            <span class="time-wrapper">
+              <span class="time">2017</span>
+            </span>
+          </div>
+          <div class="desc">
+            During my internsthip, I came understood the importance of a well built website. This motivated me to learn about single page web applications, I learned the VueJS framework and attempted to develop a buy/sell website targetted towards dealerhips to advertise their inventory.
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 6 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <div class="year-title-img">
+              <img src="@/assets/apple_logo.png" class="dot" alt="">
+              <span class="time-wrapper"><span class="time">2018</span></span>
+              <span class="flag flag-l">iOS Development</span>
+            </div>
+          </div>
+          <div class="desc">
+            Since I had already developed Android applications in the past, I thought, why not learn iOS app development? Which is exactly what I did, read the iOS app development textbook from Apple's own iBooks.
+          </div>
+        </div>
+      </li>
+
     </ul>
   </div>
 </template>
@@ -303,10 +335,6 @@ header h1{
 
   .time {
     padding: 5px 10px;
-  }
-
-  .direction-r .desc {
-    margin: 1em 0 0 0.75em;
   }
 
   .small-logo {
