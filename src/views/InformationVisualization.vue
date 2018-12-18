@@ -1,5 +1,5 @@
 <template>
-  <div class="games main-area">
+  <div class="games main-area container">
     <UnderConstruction title="Info. Vis.?">
     </UnderConstruction>
   </div>

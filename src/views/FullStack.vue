@@ -1,5 +1,5 @@
 <template>
-  <div class="full-stack main-area">
+  <div class="full-stack main-area container">
     <UnderConstruction title="Full Stack">
     </UnderConstruction>
   </div>

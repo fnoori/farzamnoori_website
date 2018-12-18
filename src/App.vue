@@ -20,7 +20,7 @@
     </keep-alive>
     <footer>
       <div class="trademark">
-        2018 Farzam
+        {{(new Date()).getFullYear()}} Farzam
       </div>
       <div class="contact-info">
         <a href="mailto:fnoori431@gmail.com">fnoori431@gmail.com</a>
@@ -57,7 +57,8 @@ export default {
   }
 
   .main-area {
-    height: 551px;
+    height: 100vh;
+    margin-top: 1rem;
   }
 
   .navbar-brand {
