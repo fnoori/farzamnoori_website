@@ -1,5 +1,5 @@
 <template>
-  <div class="databases main-area">
+  <div class="databases main-area container">
     <UnderConstruction title="Databases">
     </UnderConstruction>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="computer-graphics main-area">
+  <div class="computer-graphics main-area container">
     <UnderConstruction title="Computer Graphics">
     </UnderConstruction>
   </div>

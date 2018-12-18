@@ -1,5 +1,5 @@
 <template>
-  <div class="main-area container">
+  <div class="container">
     <WelcomeBanner/>
     <ul class="timeline">
       <!-- Item 1 -->
@@ -68,14 +68,18 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper-r">
-            <img src="@/assets/vue_logo.png" class="dot" alt="">
+            <div class="dot multi-dot">
+              <img src="@/assets/vue_logo.png" alt="">
+              <img src="@/assets/nodejs_logo.png" alt="">
+              <img src="@/assets/mongodb_logo.png" alt="">
+            </div>
             <span class="flag flag-r">Full Stack</span>
             <span class="time-wrapper">
               <span class="time">2017</span>
             </span>
           </div>
           <div class="desc">
-            During my internsthip, I came understood the importance of a well built website. This motivated me to learn about single page web applications, I learned the VueJS framework and attempted to develop a buy/sell website targetted towards dealerhips to advertise their inventory.
+            During my internsthip, I came understood the importance of a well built website. This motivated me to learn VueJS (frontend), NodeJS (backend), and MongoDB (Database) and attempted to develop a buy/sell website targetted towards dealerships to advertise their inventory.
           </div>
         </div>
       </li>
@@ -172,6 +176,18 @@ header h1{
   left: 0;
   right: 0;
 }
+.timeline .multi-dot {
+  left: -2px !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+.timeline .multi-dot img {
+  width: 3rem;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.05) !important;
+  background-color: white;
+  margin: 0.2rem 0;
+}
+
 
 .timeline .dot:before {
   border-bottom: 4px solid #00c4f3;
@@ -275,6 +291,9 @@ header h1{
   .timeline .dot {
     left: -44px;
     right: auto;
+  }
+  .timeline .multi-dot {
+    left: -46px !important;
   }
 
   .timeline .direction-l .dot {
