@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Databases from './views/Databases.vue'
 import FullStack from './views/FullStack.vue'
 import InformationVisualization from './views/InformationVisualization.vue'
+import Login from './views/Login.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/information_visualization',
       name: 'information_visualization',
       component: InformationVisualization
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
     },
     {
       path: '/about',
