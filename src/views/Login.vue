@@ -32,6 +32,7 @@ export default {
   },
 
   created () {
+    // eslint-disable-next-line
     console.log(this.authenticated)
 
     auth.authNotifier.on('authChange', authState => {
