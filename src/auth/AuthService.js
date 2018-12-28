@@ -1,6 +1,7 @@
 import auth0 from 'auth0-js'
 import EventEmitter from 'eventemitter3'
 import router from './../router'
+import store from '../store/index'
 
 class AuthService {
   accessToken
@@ -10,12 +11,12 @@ class AuthService {
   authNotifier = new EventEmitter()
 
   auth0 = new auth0.WebAuth({
-    domain: 'farzamn-noori.auth0.com',
-    clientID: 'RBUd0Jc0WaEz0lHRj6h8x3KORK6U4Hyt',
-    redirectUri: 'http://localhost:8080/login',
-    responseType: 'token id_token',
-    audience: 'https://farzamnoori_users',
-    scope: 'openid'
+    domain: process.env.VUE_APP_DOMAIN,
+    clientID: process.env.VUE_APP_CLIENT_ID,
+    redirectUri: process.env.VUE_APP_REDIRECT_URI,
+    responseType: process.env.VUE_APP_RESPONSE_TYPE,
+    audience: process.env.VUE_APP_AUDIENCE,
+    scope: process.env.VUE_APP_SCOPE
   })
 
   login () {
@@ -29,8 +30,6 @@ class AuthService {
         router.replace('login')
       } else if (err) {
         router.replace('login')
-        // eslint-disable-next-line
-        console.log(err)
         alert(`Error: ${err.error}. Check the console for further details.`)
       }
     })
@@ -41,7 +40,16 @@ class AuthService {
     this.idToken = authResult.idToken
     this.expiresAt = authResult.expiresIn * 1000 + new Date().getTime()
 
+    var authData = {}
+    authData = {
+      accessToken: this.accessToken,
+      idToken: this.idToken,
+      expiresAt: this.expiresAt
+    }
+
     this.authNotifier.emit('authChange', { authenticated: true })
+    //mutations.updateAuthToken(authData, authData)
+    store.mutations.updateAuthToken(authData)
 
     localStorage.setItem('loggedIn', true)
   }
@@ -52,8 +60,6 @@ class AuthService {
         this.setSession(authResult)
       } else if (err) {
         this.logout()
-        // eslint-disable-next-line
-        console.log(err)
         alert(`Could not get a new token (${err.error}: ${err.error_description}).`)
       }
     })
