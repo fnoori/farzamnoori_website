@@ -21,6 +21,7 @@
 
 <script>
 import auth from '../auth/AuthService'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'login',
@@ -43,9 +44,9 @@ export default {
   },
 
   methods: {
-    login () {
-      auth.login()
-    },
+    ...mapActions([
+      'login'
+    ]),
     logout () {
       auth.logout()
     }

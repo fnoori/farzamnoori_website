@@ -10,6 +10,7 @@ const state = {
   idToken: localStorage.getItem("idToken"),
   accessToken: localStorage.getItem("accessToken"),
   tokensExpiry: localStorage.getItem("tokensExpiry"),
+  mySpecialState: ''
 }
 
 export default new Vuex.Store({

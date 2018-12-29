@@ -3,12 +3,16 @@ import EventEmitter from 'eventemitter3'
 import router from './../router'
 import store from '../store/index'
 
-class AuthService {
+export default class AuthService {
   accessToken
   idToken
   expiresAt
   authenticated = this.isAuthenticated()
   authNotifier = new EventEmitter()
+
+  constructor () {
+    this.login = this.login.bind(this)
+  }
 
   auth0 = new auth0.WebAuth({
     domain: process.env.VUE_APP_DOMAIN,
@@ -21,6 +25,10 @@ class AuthService {
 
   login () {
     this.auth0.authorize()
+
+    store.state.mySpecialState = 'blah blah'
+    // eslint-disable-next-line
+    console.log(store.sate.mySpecialState)
   }
 
   handleAuthentication () {
@@ -48,8 +56,7 @@ class AuthService {
     }
 
     this.authNotifier.emit('authChange', { authenticated: true })
-    //mutations.updateAuthToken(authData, authData)
-    store.mutations.updateAuthToken(authData)
+    store.commit('updateAuthToken', authData)
 
     localStorage.setItem('loggedIn', true)
   }
@@ -75,6 +82,7 @@ class AuthService {
     this.authNotifier.emit('authChange', false)
 
     localStorage.removeItem('loggedIn')
+    localStorage.removeItem('')
 
     // navigate to the home route
     router.replace('login')
@@ -86,5 +94,3 @@ class AuthService {
     return new Date().getTime() < this.expiresAt && localStorage.getItem('loggedIn') === 'true'
   }
 }
-
-export default new AuthService()
