@@ -21,7 +21,7 @@
 
 <script>
 import auth from '../auth/AuthService'
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'login',
@@ -32,23 +32,31 @@ export default {
     }
   },
 
-  created () {
-    // eslint-disable-next-line
-    console.log(this.authenticated)
-
+  mounted () {
     auth.authNotifier.on('authChange', authState => {
       this.authenticated = authState.authenticated
     })
 
     auth.renewSession()
+
+    console.log(this.userTokenInfoGetter())
   },
 
   methods: {
     ...mapActions([
-      'login'
+      'loginAction',
+      'logoutAction'
     ]),
-    logout () {
-      auth.logout()
+    ...mapGetters([
+      'userTokenInfoGetter'
+    ]),
+
+    login: function() {
+      this.loginAction(true)
+    },
+
+    logout: function() {
+      this.logoutAction(false)
     }
   }
 }

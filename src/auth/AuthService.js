@@ -1,9 +1,8 @@
 import auth0 from 'auth0-js'
 import EventEmitter from 'eventemitter3'
 import router from './../router'
-import store from '../store/index'
 
-export default class AuthService {
+class AuthService {
   accessToken
   idToken
   expiresAt
@@ -25,10 +24,6 @@ export default class AuthService {
 
   login () {
     this.auth0.authorize()
-
-    store.state.mySpecialState = 'blah blah'
-    // eslint-disable-next-line
-    console.log(store.sate.mySpecialState)
   }
 
   handleAuthentication () {
@@ -44,21 +39,11 @@ export default class AuthService {
   }
 
   setSession (authResult) {
-    this.accessToken = authResult.accessToken
-    this.idToken = authResult.idToken
-    this.expiresAt = authResult.expiresIn * 1000 + new Date().getTime()
-
-    var authData = {}
-    authData = {
-      accessToken: this.accessToken,
-      idToken: this.idToken,
-      expiresAt: this.expiresAt
-    }
+    localStorage.setItem('access_token', authResult.accessToken)
+    localStorage.setItem('id_token', authResult.idToken)
+    localStorage.setItem('expires_at', authResult.expiresIn * 1000 + new Date().getTime())
 
     this.authNotifier.emit('authChange', { authenticated: true })
-    store.commit('updateAuthToken', authData)
-
-    localStorage.setItem('loggedIn', true)
   }
 
   renewSession () {
@@ -74,15 +59,11 @@ export default class AuthService {
 
   logout () {
     // Clear access token and ID token from local storage
-    this.accessToken = null
-    this.idToken = null
-    this.expiresAt = null
+    localStorage.setItem('access_token', null)
+    localStorage.setItem('id_token', null)
+    localStorage.setItem('expires_at', null)
 
-    this.userProfile = null
     this.authNotifier.emit('authChange', false)
-
-    localStorage.removeItem('loggedIn')
-    localStorage.removeItem('')
 
     // navigate to the home route
     router.replace('login')
@@ -94,3 +75,5 @@ export default class AuthService {
     return new Date().getTime() < this.expiresAt && localStorage.getItem('loggedIn') === 'true'
   }
 }
+
+export default new AuthService;
