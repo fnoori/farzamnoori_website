@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Databases from './views/Databases.vue'
+/*import Databases from './views/Databases.vue'
 import FullStack from './views/FullStack.vue'
 import InformationVisualization from './views/InformationVisualization.vue'
 import Login from './views/Login.vue'
-
+*/
 Vue.use(Router)
 
 export default new Router({
@@ -17,7 +17,7 @@ export default new Router({
       name: 'home',
       component: Home
     },
-    {
+/*    {
       path: '/databases',
       name: 'databases',
       component: Databases
@@ -43,7 +43,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      component: () => import(/* webpackChunkName: "about" */ //'./views/About.vue')
+    //}
   ]
 })
