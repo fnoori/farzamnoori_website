@@ -38,8 +38,6 @@ export default {
     })
 
     auth.renewSession()
-
-    console.log(this.userTokenInfoGetter())
   },
 
   methods: {
@@ -52,11 +50,11 @@ export default {
     ]),
 
     login: function() {
-      this.loginAction(true)
+      this.loginAction()
     },
 
     logout: function() {
-      this.logoutAction(false)
+      this.logoutAction()
     }
   }
 }
