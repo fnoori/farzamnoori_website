@@ -111,6 +111,11 @@ export default {
   name: 'home',
   components: {
     WelcomeBanner
+  },
+
+  mounted () {
+    // eslint-disable-next-line
+    console.log('domain is: ' + process.env.VUE_APP_DOMAIN);
   }
 }
 </script>
