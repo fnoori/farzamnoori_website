@@ -4,17 +4,19 @@
       <b-navbar-brand to="/" class="mr-auto">
         <img src="@/assets/farzamnoori_title.png" class="title" alt=""/>
       </b-navbar-brand>
+      <!--
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
       <b-collapse is-nav id="nav_collapse" class="navbar-items">
-        <!--
+
         <b-navbar-nav>
           <b-nav-item to="/full_stack">Full Stack</b-nav-item>
           <b-nav-item to="/databases">Databases</b-nav-item>
           <b-nav-item to="/information_visualization">Information Visualization</b-nav-item>
         </b-navbar-nav>
-        -->
+
       </b-collapse>
+      -->
     </b-navbar>
     <keep-alive>
       <router-view/>
