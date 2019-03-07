@@ -79,7 +79,7 @@
             </span>
           </div>
           <div class="desc">
-            During my internsthip, I came understood the importance of a well built website. This motivated me to learn VueJS (frontend), NodeJS (backend), and MongoDB (Database) and attempted to develop a buy/sell website targetted towards dealerships to advertise their inventory.
+            During my internsthip, I came understood the importance of a well built website. This motivated me to learn the MEVN stack.
           </div>
         </div>
       </li>
@@ -95,7 +95,21 @@
             </div>
           </div>
           <div class="desc">
-            Since I had already developed Android applications in the past, I thought, why not learn iOS app development? Which is exactly what I did, read the iOS app development textbook from Apple's own iBooks.
+            Since I had already developed Android applications in the past, I thought, why not learn iOS app development?
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 7 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper-r">
+            <img src="@/assets/dot_dot_dot.png" class="dot" alt="">
+            <span class="flag flag-r">Goals and Aspirations</span>
+            <span class="time-wrapper"><span class="time">Future</span></span>
+          </div>
+          <div class="desc">
+            We have so much data available to us at any given moment, so much that it can seem overwhelming. However, data is only as good as it can be understood, this is where the field of information visualization comes into play. This is the area of computer science I am keen on learning more about.
           </div>
         </div>
       </li>
