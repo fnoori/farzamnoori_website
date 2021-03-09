@@ -79,7 +79,7 @@
             </span>
           </div>
           <div class="desc">
-            During my internsthip, I came understood the importance of a well built website. This motivated me to learn the MEVN stack.
+            During my internsthip, I came to understood the importance of a well built website. This motivated me to learn the MEVN stack.
           </div>
         </div>
       </li>
@@ -104,12 +104,33 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper-r">
-            <img src="@/assets/dot_dot_dot.png" class="dot" alt="">
-            <span class="flag flag-r">Goals and Aspirations</span>
-            <span class="time-wrapper"><span class="time">Future</span></span>
+            <div class="dot multi-dot">
+              <img src="@/assets/helcim_logo.png" alt="">
+            </div>
+            <span class="flag flag-r">Helcim</span>
+            <span class="time-wrapper">
+              <span class="time">2019 - Current</span>
+            </span>
           </div>
           <div class="desc">
-            We have so much data available to us at any given moment, so much that it can seem overwhelming. However, data is only as good as it can be understood, this is where the field of information visualization comes into play. This is the area of computer science I am keen on learning more about.
+            Currently working as a Full Stack developer at Helcim. Working amongst a talented group of individuals, motivates me to bring my best everyday.
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 8 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <div class="year-title-img">
+              <img src="@/assets/dot_dot_dot.png" class="dot" alt="">
+              <span class="time-wrapper"><span class="time">Future</span></span>
+              <span class="flag flag-l">Goals and Aspirations</span>
+            </div>
+          </div>
+          <div class="desc">
+            On my personal time, I am constantly learning new technologies, I enjoy figuring out how a certain framework or program functions.
+            Because of my eagerness to learn, I hope to create a service of my own that will take away some of the challenges a person, organization, or business might face.
           </div>
         </div>
       </li>
