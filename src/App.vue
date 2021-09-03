@@ -26,7 +26,7 @@
         {{(new Date()).getFullYear()}} Farzam
       </div>
       <div class="contact-info">
-        <a href="mailto:fnoori@ucalgary.ca">fnoori@ucalgary.ca</a>
+        <a href="mailto:fnoori431@gmail.com">fnoori431@gmail.com</a>
       </div>
     </footer>
   </div>
